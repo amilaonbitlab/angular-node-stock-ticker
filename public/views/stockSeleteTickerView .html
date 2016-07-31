@@ -1,0 +1,38 @@
+
+	<div class="row">
+	    <div >
+	    	<button type="submit" ng-click="viewAllTickers()" class="btn btn-primary view-stock-all-ticker-btn">All Tickers</button>
+	    	<button type="submit" ng-click="ViewWishListTickers()" class="btn btn-info view-stock-wisth-list-ticker-btn">Wish List Tickers</button>
+	    	<!-- <h4 class="show-timer">Time (Second) : {{currentTime}} </h4> -->
+	    </div>
+    </div>
+	
+	<!-- Here visible All Stock Ticker Table -->
+	<div ng-if="isVisibleTable">		
+		<h3 ng-if="isVisibleAll">All Stock Tickers</h3>
+		<h3 ng-if="isVisibleWishList">Wish List Tickers</h3>
+		<table class="table">
+			<tr>
+				<td>Symbol</td>
+				<td>Price</td>
+			 	<td>Changes</td>						
+				<td>%</td>							
+				<td></td>
+				<td></td>
+			</tr>
+			<tbody>
+				<tr ng-repeat="ticker in stockTikcerArray">
+					<td>{{ticker.symbol}}</td>
+					<td>{{ticker.price}}</td>
+					<td>{{ticker.different}} {{ticker.upDown}}</td>
+					<td>{{ticker.percentage}} % </td>
+					<td>View </td>
+					<td ng-if="isVisibleAll" >Add</td>
+					<td ng-if="isVisibleWishList">Remove</td>
+				</tr>			
+			</tbody>
+		</table>
+		<div ng-if="stockTikcerArray.length == 0">
+			<i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+		</div>
+	</div>

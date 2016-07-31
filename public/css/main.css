@@ -1,0 +1,103 @@
+
+/** ----- Custm css class --*/
+body{
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	background-color: #cccccc;
+	background-image: url(../img/background-image.jpg);
+}
+
+
+header {
+	width: 100%;
+	height: 4%;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	margin-top: 1%;
+	background-color: #BD1FDA;
+	padding: 5px;
+	
+	/*text-align: center;*/
+}
+
+section {
+	/*text-align: center;*/
+}
+
+
+footer {
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	margin-top: 350px;
+	background-color: #415249;
+	padding: 5px;
+	color: #fff;
+	
+}
+
+.table {
+	width: 90%;
+	float: center;
+	margin-left: 5%;
+}
+
+.display-time{
+	/*text-align: center;*/
+}
+.ticker-view-area {	
+	border-radius: 5px;
+	background-color: #9D9BFF;	
+	height: 420px;
+	border-width: 10px;
+    border-style: outset;
+}
+
+.login-view-area {	
+	padding: 5%;
+	padding-top: 8%;
+	border-radius: 5px;
+	background-color: #349261;	
+	height: 420px;
+}
+
+.form-group{
+	text-align: center;
+}
+.form-group input {
+	text-align: center;
+}
+
+.view-stock-all-ticker-btn{
+	float: left;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.view-stock-wisth-list-ticker-btn {
+	float: left;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+.show-timer {
+	float: right;
+	margin-top: 2%;
+}
+
+.user-image {
+	width: 100%;
+}
+
+.user-name {
+	padding: 10px;
+}
+
+.view-tikcer-info{
+	background-color: #F2FB70;
+    margin-left: 10%;
+    width: 100%;
+    height: 225px;
+    border-radius: 5px;
+}

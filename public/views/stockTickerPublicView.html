@@ -1,0 +1,24 @@
+<div class="row">	
+	<h3>All Stock Tickers</h3>
+	<table class="table">
+		<tr>
+			<td>Symbol</td>
+			<td>Old Price</td>
+			<td>Price</td>
+			<td>Changes</td>						
+			<td>%</td>							
+		</tr>
+	<tbody>
+		<tr ng-repeat="ticker in stockTikcerArray">
+			<td>{{ticker.symbol}}</td>
+			<td>{{ticker.oldPrice}}</td>
+			<td>{{ticker.price}}</td>
+			<td>{{ticker.different}} {{ticker.upDown}}</td>
+			<td>{{ticker.percentage}} % </td>
+		</tr>			
+	</tbody>
+	</table>
+	<div ng-if="stockTikcerArray.length == 0">
+	<i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+	</div>	
+</div>
